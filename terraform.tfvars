@@ -1,0 +1,13 @@
+region_name     = "us-east-1"
+vpc_cidr_block  = "10.0.0.0/16"
+vpc_tags        = "Terraform-VPC"
+subnet_cidr     = "10.0.1.0/24"
+private_cidr = "10.0.2.0/24"
+route_cidr      = "0.0.0.0/0"
+igw_tag         = "Terraform-IGW"
+subnet_tag      = "Public-terraform-subnet"
+route_table_tag = "Public-Route-table"
+security_cidr = ["0.0.0.0/0"]
+security_group_name = "Terraform-Security-Group"
+instance_type = "t2.micro"
+azs = "us-east-1a"
